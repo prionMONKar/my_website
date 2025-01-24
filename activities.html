@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prionkar Barua</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    
+        .fade-in {
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+    </style>
+    
+</head>
+<body class="bg-gray-600 text-gray-800">
+    <!-- Navbar -->
+    <header class="bg-gray-300 shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto flex items-center justify-between py-4 px-6">
+            <a href="#" class="text-2xl font-bold">Prionkar Barua</a>
+            <ul class="flex space-x-12">
+                <li><a href="my_website.html" class="hover:text-red-500">Home</a></li>
+                <li><a href="Prionkar Barua (Tech CV).pdf" class="text-red-500 font-bold hover:text-green-500">Download CV</a></li> <!-- Added CV link -->
+                <li><a href="activities.html" class="hover:text-red-500 nav-link px-4 py-2 bg-transparent rounded-full shadow-md">Activities</a></li>
+                <li><a href="awards.html" class="hover:text-red-500 nav-link px-4 py-2 border-2 border-transparent">Awards</a></li>
+                <li><a href="publications.html" class="hover:text-red-500 nav-link px-4 py-2 border-2 border-transparent">Research</a></li>
+                <li><a href="certifications.html" class="hover:text-red-500 nav-link px-4 py-2 border-2 border-transparent">Certifications</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-10">
+        <form id="about">
+            <!-- About Me Section -->
+            <section class="min-h-screen flex flex-col md:flex-row items-center justify-center bg-gradient-to-r from-gray-300 to-gray-100 fade-in">
+                <div class="md:w-1/3 flex justify-center">
+                    <img src="" alt="Your Passport Size Photo" 
+                         class="shadow-lg transform hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="md:w-2/3 mb-6 md:mb-0 px-4">
+                    <h2 class="text-4xl font-bold mb-6 text-gray-800">About Me</h2>
+                    <p class="text-lg leading-7 text-gray-700">
+                        Hello Everyone... I'm Prionkar Barua, a learner just graduated from Premier University, 
+                        Computer Science and Engineering Department. I'm looking for an opportunity to foster my career 
+                        in research and the rapidly changing technological field. A willingness to contribute to society 
+                        with not only my knowledge but also with my problem-solving, critical thinking, and communication skills. 
+                        I am happy to approach for related or multidisciplinary roles.
+                    </p>
+                </div>
+            </section>
+        </form>
+
+        <form id="cv">
+            <!-- Download CV Section -->
+            <section class="hidden">
+                <a href="F:\Portfolio\Prionkar Barua (Tech CV).pdf" class="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-600" download>Download My CV</a>
+            </section>
+        </form>
+
+        <form id="education">
+            <!-- Education Section -->
+            <section class="min-h-screen flex flex-col justify-center bg-gradient-to-r from-gray-300 to-gray-100 fade-in">
+                <div class="text-center mb-8">
+                    <h2 class="text-4xl font-bold mb-4 text-gray-800">Education</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-8">
+                    <div class="bg-white shadow-lg p-6 rounded-lg hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="font-semibold text-xl mb-2">SSC</h3>
+                        <ul class="list-disc ml-5 text-gray-700">
+                            <li>Chittagong Govt. High School</li>
+                            <li>GPA 5.00 (On Scale 5.00)</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white shadow-lg p-6 rounded-lg hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="font-semibold text-xl mb-2">HSC</h3>
+                        <ul class="list-disc ml-5 text-gray-700">
+                            <li>Hazera Taju Degree College</li>
+                            <li>GPA 4.25 (On Scale 5.00)</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white shadow-lg p-6 rounded-lg hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="font-semibold text-xl mb-2">BSc</h3>
+                        <ul class="list-disc ml-5 text-gray-700">
+                            <li>Premier University</li>
+                            <li>GPA 3.51 (On Scale 4.00)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </form>
+
+        <form id="research-interest">
+            <!-- Research Interest -->
+            <section class="min-h-screen py-16 bg-gradient-to-r from-gray-300 to-gray-100 fade-in">
+                <div class="container mx-auto px-6 text-center">
+                  <h2 class="text-3xl font-semibold text-gray-800 mb-4">Research Interest</h2>
+                  <p class="text-lg text-gray-600 mb-6">
+                    Currently I'm doing research under the supervision of <b>Dr. Mahdy Rahman Chowdhury</b> at <b>Mahdy Research Academy </b>where I'm 
+                    Working on better understanding of Road Scene for Autonomous Vehicle using current knowledge of deep learning and transformers.
+                    In future, I'm interested to research on advance deep learning algorithm and their implementation on Robotic perception and Immitation. 
+                  </br>To make this happen my software development knowledge will also help to build and test those works
+                  </p>
+                  
+                  <!-- List of Research Areas -->
+                  <ul class="list-disc list-inside text-left text-lg mx-auto max-w-2xl text-gray-700">
+                    <li>Computer Vision</li>
+                    <li>Perception and Immitation</li>
+                  </ul>
+                </div>
+              </section>
+        </form>
+
+        <form id="skills">
+            <!-- Skills Section -->
+            <section class="min-h-screen flex flex-col justify-center bg-gradient-to-r from-gray-300 to-gray-100 fade-in">
+                <div class="text-center mb-8">
+                    <h2 class="text-4xl font-bold mb-4 text-gray-800">Skills</h2>
+                    <p class="text-lg text-gray-700">A showcase of my professional and technical skills.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 px-8">
+                    <div class="bg-white shadow-lg p-6 rounded-lg hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="font-semibold text-xl mb-2">Technical Skills</h3>
+                        <ul class="list-disc ml-5 text-gray-700">
+                            <li><b>Programming Languages</b> </br> C/C++, Python, PHP, JavaScript(ES6)</li>
+                            <li><b>Frameworks & Libraries</b> </br> Flask, Laravel</li>
+                            <li><b>Databases</b> </br> Relational Database(MySQL)</li>
+                            <li><b>Tools</b> </br> Version Control (Git & Github)</li>
+                            <li><b>Server Knowledge</b> </br> Web Server (Apache)</li>
+                            <li><b>Testing & Debugging</b> </br> Testing Frameworks (---) </br> Debugging Tools (---)</li>
+                            <li><b>Cloud & Deployment</b> </br> Cloud Platforms (AWS) </br> Deployment Tools (---)</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white shadow-lg p-6 rounded-lg hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="font-semibold text-xl mb-2">Research Skills</h3>
+                        <ul class="list-disc ml-5 text-gray-700">
+                            <li><b>Data Visualization</b> </br> Matplotlib, Seaborn</li>
+                            <li><b>Data Annotation</b></li>
+                            <li><b>Literature Review</b></li>
+                            <li><b>Pipeline Design</b></li>
+                            <li><b>Model Deployment</b> </br> Flask</li>
+                            <li><b>Paper Implementation</b></li>
+                        </ul>
+                    </div>
+                    <div class="bg-white shadow-lg p-6 rounded-lg hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="font-semibold text-xl mb-2">Core Competancies<h3>
+                        <ul class="list-disc ml-5 text-gray-700">
+                            <li>Problem solving</li>
+                            <li>Collaboration</li>
+                            <li>Critical Thinking</li>
+                            <li>Analytical ability</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white shadow-lg p-6 rounded-lg hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="font-semibold text-xl mb-2">Soft Skills</h3>
+                        <ul class="list-disc ml-5 text-gray-700">
+                            <li>Communication</li>
+                            <li>Intend to Learn</li>
+                            <li>Team Work</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </form>
+
+        <form id="projects">
+            <!-- Projects Section -->
+            <section class="min-h-screen flex flex-col justify-center bg-gradient-to-r from-gray-300 to-gray-100 fade-in">
+                <div class="text-center mb-8">
+                    <h2 class="text-4xl font-bold mb-4 text-gray-800">Projects</h2>
+                    <p class="text-lg text-gray-700">Showcase your projects here with titles, descriptions, and links.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-8">
+                    <div class="bg-white shadow-lg p-6 rounded-lg hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="font-semibold text-xl mb-2">Project 1</h3>
+                        <p class="text-gray-700">Brief description of the project.</p>
+                        <a href="#" class="text-blue-500 hover:underline">View More</a>
+                    </div>
+                    <div class="bg-white shadow-lg p-6 rounded-lg hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="font-semibold text-xl mb-2">Project 2</h3>
+                        <p class="text-gray-700">Brief description of the project.</p>
+                        <a href="#" class="text-blue-500 hover:underline">View More</a>
+                    </div>
+                    <div class="bg-white shadow-lg p-6 rounded-lg hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="font-semibold text-xl mb-2">Project 3</h3>
+                        <p class="text-gray-700">Brief description of the project.</p>
+                        <a href="#" class="text-blue-500 hover:underline">View More</a>
+                    </div>
+                </div>
+            </section>
+        </form>
+
+        <form id="experience">
+            <!-- Experience Section -->
+            <section class="min-h-screen flex flex-col justify-center bg-gradient-to-r from-gray-300 to-gray-100 fade-in">
+                <h2 class="text-3xl text-center font-bold mb-4">Experience</h2>
+                <p class="text-lg text-center leading-7">Describe your professional experiences here, highlighting key roles and achievements.</p>
+                <div class="h-screen flex justify-center items-center">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 px-8 py-16">
+                        <!-- Card 1 -->
+                        <div class="bg-white shadow-lg p-6 rounded-lg hover:shadow-xl transition-shadow duration-300">
+                            <h3 class="font-semibold text-xl mb-2">Contact</h3>
+                            <p class="text-gray-700">Brief description of the project.</p>
+                            <a href="#" class="text-blue-500 hover:underline">View More</a>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="bg-white shadow-lg p-6 rounded-lg hover:shadow-xl transition-shadow duration-300">
+                            <h3 class="font-semibold text-xl mb-2">Another Experience</h3>
+                            <p class="text-gray-700">Details about another professional experience.</p>
+                            <a href="#" class="text-blue-500 hover:underline">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </form>
+
+        <form id="contact">
+            <!-- Contact Section -->
+            <section class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-gray-300 to-gray-100 fade-in">
+                <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+                <p class="text-lg text-center text-gray-700 mb-6">
+                    Feel free to reach out for collaborations, opportunities, or just to connect!
+                </p>
+                <form action="#" method="post" class="bg-white shadow-lg p-6 rounded-lg w-full max-w-lg">
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-800 font-semibold mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-800 font-semibold mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-gray-800 font-semibold mb-2">Message</label>
+                        <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors duration-300">
+                        Send Message
+                    </button>
+                </form>
+            </section>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-300 py-4">
+        <div class="container mx-auto text-center text-gray-700">
+            &copy; 2024 Prionkar Barua. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

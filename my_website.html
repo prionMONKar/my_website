@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en" class="lenis">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prionkar Barua</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Slide from left animation */
+        @keyframes slideFromLeft {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    
+        /* Slide from right animation */
+        @keyframes slideFromRight {
+            0% {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    
+        /* Default styles for the heading */
+        h1 {
+            font-size: 2rem;
+            color: white;
+            font-weight: 600;
+            text-transform: uppercase;
+            border-bottom: 2px solid white;
+            opacity: 0; /* Initially hidden */
+        }
+    
+        /* First time in view (slide from left) */
+        .slide-from-left {
+            animation: slideFromLeft 1s forwards;
+        }
+    
+        /* Subsequent views (slide from right) */
+        .slide-from-right {
+            animation: slideFromRight 1s forwards;
+        }
+    </style>
+
+</head>
+
+<body class="bg-black text-gray-800 overflow-x-hidden">
+    <!-- Navbar -->
+    <header
+        class="shadow-md sticky top-0 z-50 transition-colors ease-in-out duration-200 bg-[#3C393520] text-[#3C3935] backdrop-blur-xl">
+        <nav class="container mx-auto flex items-center justify-between py-4 px-6">
+            <a href="#" class="text-cyan-500 text-2xl font-bold">Prionkar Barua</a>
+            <ul class="flex space-x-12">
+                <li><a href="my_website.html"
+                        class="text-cyan-500 hover:text-red-500 nav-link px-4 py-2 font-bold ">Home</a>
+                </li>
+                <li><a href="Prionkar Barua (CV).pdf" class="text-red-500 font-bold hover:text-cyan-500" download>Download
+                        CV</a></li> <!-- Added CV link -->
+                <li><a href="activities.html" class="text-cyan-500 hidden font-bold hover:text-red-500 ">Activities</a>
+                </li>
+                <li><a href="awards.html" class="text-cyan-500 hidden hover:text-red-500 ">Awards</a>
+                </li>
+                <li><a href="publications.html" class="text-cyan-500 hidden hover:text-red-500 ">Research</a>
+                </li>
+                <li><a href="certifications.html" class="text-cyan-500 hidden hover:text-red-500 ">Certifications</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container top-0 z-50">
+        <form id="about" class="flex justify-center items-center h-screen w-screen">
+            <!-- About Me Section -->
+            <section
+                class="relative flex flex-col h-full w-full max-w-screen p-6 lg:p-12 border-2 border-white/50 shadow-lg shadow-white/50"
+                style="background-color: rgb(223, 223, 218);">
+                <div class="flex flex-col md:flex-row h-full w-full">
+                    <!-- Image Section -->
+                    <div class="relative py-32">
+                        <img src="Prionkar_Barua.jpg"
+                            class="relative md:h-[450px]  sm:h-[450px] h-[450px]  w-[450px] bg-[#DFDFDA] rounded-b-full object-cover  "
+                            alt="Prionkar Barua">
+                    </div>
+                    <!-- Content Section -->
+                    <div class="md:w-2/3 flex flex-col justify-center px-8">
+                        <h2 class="text-4xl font-bold mb-6 text-gray-800">About Me</h2>
+                        <p class="text-lg leading-7 text-gray-700">
+                            Hello Everyone... I'm Prionkar Barua, a learner just graduated from Premier University,
+                            Computer Science and Engineering Department. I'm looking for an opportunity to foster my
+                            career
+                            in research and the rapidly changing technological field. A willingness to contribute to
+                            society
+                            with not only my knowledge but also with my problem-solving, critical thinking, and
+                            communication skills.
+                            I am happy to approach for related or multidisciplinary roles.
+                            </br>
+                        </p>
+                        <div class="py-10">
+                            <a href="Prionkar Barua (CV).pdf"
+                                class="inline-block bg-gray-800 text-center text-white px-6 py-3 rounded-lg shadow-md hover:bg-cyan-800"
+                                download>
+                                Download My CV
+                            </a>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/prionkar.barua.2024" target="_blank" class="hover:text-cyan-500">
+                                <i class="fab fa-facebook fa-2x px-2"></i>
+                            </a>
+                            <a href="https://wa.me/+8801966106570" target="_blank" class="hover:text-green-400">
+                                <i class="fab fa-whatsapp fa-2x px-2"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/prionkar-barua-766b05274/" target="_blank"
+                                class="hover:text-blue-700">
+                                <i class="fab fa-linkedin fa-2x px-2"></i>
+                            </a>
+                            <a href="https://github.com/prionMONKar" target="_blank" class="hover:text-cyan-800">
+                                <i class="fab fa-github fa-2x px-2"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </form>
+
+        <form id="cv" class="flex justify-center items-center">
+            <!-- Download CV Section -->
+            <section class="mt-6">
+                
+            </section>
+        </form>
+        
+    </main>
+    <!-- Main Content -->
+    <main class="container mx-auto px-16 py-10">
+        <form id="skills" class="flex justify-center items-center">
+            <div class="max-w-7xl mx-auto lg:px-8">
+                <div class="px-4 lg:px-0 my-6 lg:my-4">
+                    <h1
+                        class="text-cyan-500 text-2xl lg:text-7xl font-semibold uppercase flex-inline  justify-start border-b border-cyan-500">
+                        SKILLS</h1>
+                </div>
+                <div class="flex flex-col items-center px-2 lg:px-8">
+                    <div class="h-screen flex items-center justify-center sticky top-0">
+                        <div class="relative flex flex-col h-[550px] md:h-[680px] lg:h-[550px] w-full lg:w-[1000px] rounded-2xl p-6 lg:p-12 origin-top border-2 border-white/50 shadow-lg shadow-white/50 "
+                            style="background-color: rgb(223, 223, 218); top: calc(0px - 5vh); transform: scale(0.8);">
+                            <h2 class="font-bold text-center text-4xl m-0">Technical Skills</h2>
+                            <ul class="list-disc ml-5 text-2xl text-gray-700">
+                                <li><b>Programming Languages</b> </br> C/C++, Python, PHP, JavaScript(ES6)</li>
+                                <li><b>Frameworks & Libraries</b> </br> Flask, Laravel</li>
+                                <li><b>Databases</b> </br> Relational Database(MySQL)</li>
+                                <li><b>Tools</b> </br> Version Control (Git & Github)</li>
+                                <li><b>Server Knowledge</b> </br> Web Server (Apache)</li>
+                                <!--<li><b>Testing & Debugging</b> </br> Testing Frameworks (---) </br> Debugging Tools
+                                    (---)</li>-->
+                                <li><b>Cloud & Deployment</b> </br> Cloud Platforms (AWS) <!--</br> Deployment Tools (---)
+                                </li>-->
+                            </ul>
+                            <div class="w-full ">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-screen flex items-center justify-center sticky top-0">
+                        <div class="relative flex flex-col h-[550px] md:h-[680px] lg:h-[550px] w-full lg:w-[1000px] rounded-2xl p-6 lg:p-12 origin-top border-2 border-white/50 shadow-lg shadow-white/50 "
+                            style="background-color: rgb(223, 223, 218); top: calc(25px - 5vh); transform: scale(0.84);">
+                            <h2 class="font-bold text-center text-4xl m-0">Research Skills </h2>
+                            <ul class="list-disc ml-5 text-2xl text-gray-700">
+                                <li><b>Data Visualization</b> </br> Matplotlib, Seaborn</li>
+                                <li><b>Data Annotation</b></li>
+                                <li><b>Literature Review</b></li>
+                                <li><b>Pipeline Design</b></li>
+                                <li><b>Model Deployment</b> </br> Flask</li>
+                                <li><b>Paper Implementation</b></li>
+                            </ul>
+                            <div class="w-full ">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-screen flex items-center justify-center sticky top-0">
+                        <div class="relative flex flex-col h-[550px] md:h-[680px] lg:h-[550px] w-full lg:w-[1000px] rounded-2xl p-6 lg:p-12 origin-top border-2 border-white/50 shadow-lg shadow-white/50 "
+                            style="background-color: rgb(223, 223, 218); top: calc(50px - 5vh); transform: scale(0.88);">
+                            <h2 class="font-bold text-center text-4xl m-0">Core Competancies</h2>
+                            <ul class="list-disc ml-5 text-2xl text-gray-700">
+                                <li>Problem solving</li>
+                                <li>Collaboration</li>
+                                <li>Critical Thinking</li>
+                                <li>Analytical ability</li>
+                            </ul>
+                            <h2 class="font-bold text-center text-4xl m-0">Soft Skills</h2>
+                            <ul class="list-disc ml-5 text-2xl text-gray-700">
+                                <li>Communication</li>
+                                <li>Intend to Learn</li>
+                                <li>Team Work</li>
+                            </ul>
+                            <div class="w-full ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </form>
+
+
+        <div class="px-4 lg:px-0 my-6 lg:my-4">
+            <h1
+                class="text-cyan-500 text-2xl lg:text-7xl font-semibold uppercase flex-inline  justify-start border-b border-cyan-500">
+                EDUCATION</h1>
+        </div>
+        <form id="education" class="flex justify-center items-center">
+            <!-- Education Section -->
+            <section>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-8">
+                    <div class="shadow-lg p-6 rounded-lg hover:shadow-xl transition-shadow duration-300"
+                        style="background-color: rgb(223, 223, 218);">
+                        <h3 class="font-semibold text-xl mb-2">SSC</h3>
+                        <ul class="list-disc ml-5 text-gray-700">
+                            <li>Chittagong Govt. High School</li>
+                            <li>GPA 5.00 (On Scale 5.00)</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white shadow-lg p-6 rounded-lg hover:shadow-xl transition-shadow duration-300"
+                        style="background-color: rgb(223, 223, 218);">
+                        <h3 class="font-semibold text-xl mb-2">HSC</h3>
+                        <ul class="list-disc ml-5 text-gray-700">
+                            <li>Hazera Taju Degree College</li>
+                            <li>GPA 4.25 (On Scale 5.00)</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white shadow-lg p-6 rounded-lg hover:shadow-xl transition-shadow duration-300"
+                        style="background-color: rgb(223, 223, 218);">
+                        <h3 class="font-semibold text-xl mb-2">BSc</h3>
+                        <ul class="list-disc ml-5 text-gray-700">
+                            <li>Premier University</li>
+                            <li>CGPA 3.51 (On Scale 4.00)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </form>
+
+        <div class="px-4 lg:px-0 my-6 lg:my-4">
+            <h1
+                class="text-cyan-500 text-2xl lg:text-7xl font-semibold uppercase flex-inline  justify-start border-b border-cyan-500">
+                Research</h1>
+        </div>
+        <form id="research-interest" class="flex justify-center items-center ">
+            <!-- Research Interest -->
+            <section
+                class="relative flex flex-col h-[550px] md:h-[680px] lg:h-[550px] w-full lg:w-[1000px] rounded-2xl p-6 lg:p-12 origin-top border-2 border-white/50 shadow-lg shadow-white/50 "
+                style="background-color: rgb(223, 223, 218); top: calc(50px - 5vh); transform: scale(0.92273);">
+                <div class="container mx-auto px-6 text-center">
+                    <h2 class="text-3xl font-semibold text-gray-800 mb-4">Research Experience</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Currently I'm doing research under the supervision of <b>Dr. Mahdy Rahman Chowdhury</b> at
+                        <b>Mahdy Research Academy </b>where I'm
+                        Working on better <b>Understanding of Road Scene for Autonomous Vehicle</b> using current
+                        knowledge of
+                        deep learning and transformers.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-6">
+                        I have done research on <b>Yoga Pose Classification</b> under the supervision of <b>Syed Md.
+                            Minhaz Hossain</b> and submitted it as my Final year thesis which is now under review on
+                        journal for publication.
+                        </br>In this research work, we have done classification and showed comparison betweeen different
+                        reknowned algorithm's performance based on our newly proposed balance dataset <b>YOGA-16</b>.
+                    </p>
+                </div>
+            </section>
+        </form>
+        <form id="research-interest" class="flex justify-center items-center ">
+            <!-- Research Interest -->
+            <section
+                class="relative flex flex-col h-[450px] md:h-[580px] lg:h-[450px] w-full lg:w-[1000px] rounded-2xl p-6 lg:p-12 origin-top border-2 border-white/50 shadow-lg shadow-white/50 "
+                style="background-color: rgb(223, 223, 218); top: calc(50px - 5vh); transform: scale(0.92273);">
+                <div class="container mx-auto px-6 text-center">
+                    <h2 class="text-3xl font-semibold text-gray-800 mb-4">Research Interest</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        In future, I'm interested to research on </br>advance deep learning algorithm and their
+                        implementation on Robotic perception and Immitation.
+                    </p>
+
+                    <!-- List of Research Areas -->
+                    <ul class="list-disc list-inside text-left text-lg mx-auto max-w-2xl text-gray-700">
+                        <li>Computer Vision</li>
+                        <li>Natural Language Processing</li>
+                        <li>Perception and Immitation</li>
+                    </ul>
+                </div>
+            </section>
+        </form>
+        <!--
+        <div class="max-w-7xl mx-auto lg:px-8" id="myprojects">
+            <div class="px-4 lg:px-0 my-6 lg:my-4">
+                <h1
+                    class="text-white text-2xl lg:text-7xl font-semibold uppercase flex-inline  justify-start border-b border-white">
+                    Projects</h1>
+            </div>
+            <div class="flex flex-col items-center px-2 lg:px-8">
+                <div class="h-screen flex items-center justify-center sticky top-0">
+                    <div class="relative flex flex-col h-[550px] md:h-[680px] lg:h-[550px] w-full lg:w-[1000px] rounded-2xl p-6 lg:p-12 origin-top border-2 border-white/50 shadow-lg shadow-white/50 "
+                        style="background-color: rgb(223, 223, 218); top: calc(0px - 5vh); transform: scale(0.8);">
+                        <h2 class="text-center text-2xl m-0">Mayan World Booking Services</h2>
+                        <div class="grid lg:grid-cols-2  my-4">
+                            <p class="hidden lg:flex">Mayan World is a reservation website for a shuttle booking
+                                company.
+                                The admin can create user as his preferences and they also can login to the dashboard as
+                                an agent.
+                                They can reserve a seat and can check the availability of the seats.
+                                The admin can see all the purchased ticket so far by all the agents and can download
+                                those as PDF.
+                            </p>
+                            <div class=" w-full p-2 flex items-center justify-center rounded-xl">
+                                <img src="mayanworld.png" alt="Mayan World Booking Services"
+                                    class="w-full h-full object-fit rounded-t-xl">
+                            </div>
+                        </div>
+                        <div class="w-full ">
+                            <p class="font-semibold text-lg my-2">Technologies I Used: </p>
+                            <div class="flex flex-wrap max-w-full  items-center">
+                                <button
+                                    class="mx-1 my-1 px-2 lg:px-4 py-2 bg-white rounded-xl text-sm md:text-sm lg:text-md undefined">NextJS</button>
+                                <button
+                                    class="mx-1 my-1 px-2 lg:px-4 py-2 bg-white rounded-xl text-sm md:text-sm lg:text-md undefined">Tailwind
+                                    CSS</button>
+                                <button
+                                    class="mx-1 my-1 px-2 lg:px-4 py-2 bg-white rounded-xl text-sm md:text-sm lg:text-md undefined">Redux</button>
+                                <button
+                                    class="mx-1 my-1 px-2 lg:px-4 py-2 bg-white rounded-xl text-sm md:text-sm lg:text-md undefined">NodeJS</button>
+                                <button
+                                    class="mx-1 my-1 px-2 lg:px-4 py-2 bg-white rounded-xl text-sm md:text-sm lg:text-md undefined">ExpressJS</button>
+                                <button
+                                    class="mx-1 my-1 px-2 lg:px-4 py-2 bg-white rounded-xl text-sm md:text-sm lg:text-md undefined">Typescript</button>
+                                <button
+                                    class="mx-1 my-1 px-2 lg:px-4 py-2 bg-white rounded-xl text-sm md:text-sm lg:text-md undefined">MongoDB</button>
+                                <button
+                                    class="mx-1 my-1 px-2 lg:px-4 py-2 bg-white rounded-xl text-sm md:text-sm lg:text-md undefined">JWT</button>
+                            </div>
+                        </div>
+                        <div class="h-full flex justify-center items-center mt-6">
+                            <span class="flex items-center gap-2">
+                                <a href="https://mayanworlds.vercel.app" target="_blank"
+                                    class="text-lg font-semibold underline cursor-pointer ">View Website</a>
+                                <svg width="22" height="12" viewBox="0 0 22 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M21.5303 6.53033C21.8232 6.23744 21.8232 5.76256 21.5303 5.46967L16.7574 0.696699C16.4645 0.403806 15.9896 0.403806 15.6967 0.696699C15.4038 0.989592 15.4038 1.46447 15.6967 1.75736L19.9393 6L15.6967 10.2426C15.4038 10.5355 15.4038 11.0104 15.6967 11.3033C15.9896 11.5962 16.4645 11.5962 16.7574 11.3033L21.5303 6.53033ZM0 6.75L21 6.75V5.25L0 5.25L0 6.75Z"
+                                        fill="black"></path>
+                                </svg></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-screen flex items-center justify-center sticky top-0">
+                    <div class="relative flex flex-col h-[550px] md:h-[680px] lg:h-[550px] w-full lg:w-[1000px] rounded-2xl p-6 lg:p-12 origin-top border-2 border-white/50 shadow-lg shadow-white/50 "
+                        style="background-color: rgb(223, 223, 218); top: calc(25px - 5vh); transform: scale(0.84);">
+                        <h2 class="text-center text-2xl m-0">Tiempo By RW Luxury </h2>
+                        <div class="grid lg:grid-cols-2  my-4">
+                            <p class="hidden lg:flex">Tiempo is a premium website for Rolex watches,
+                                allowing users to customize the site according to their requirements.
+                                The platform includes an admin feature where admins can view the user list and create
+                                accounts.
+                                Access is restricted to account holders, ensuring an exclusive experience.
+                            </p>
+                            <div class=" w-full p-2 flex items-center justify-center rounded-xl">
+                                <img src="tiempo.png" alt="Tiempo By RW Luxury "
+                                    class="w-full h-full object-fit rounded-t-xl">
+                            </div>
+                        </div>
+                        <div class="w-full ">
+                            <p class="font-semibold text-lg my-2">Technologies I Used: </p>
+                            <div class="flex flex-wrap max-w-full  items-center">
+                                <button
+                                    class="mx-1 my-1 px-2 lg:px-4 py-2 bg-white rounded-xl text-sm md:text-sm lg:text-md undefined">React
+                                    JS</button>
+                                <button
+                                    class="mx-1 my-1 px-2 lg:px-4 py-2 bg-white rounded-xl text-sm md:text-sm lg:text-md undefined">Tailwind
+                                    CSS</button>
+                                <button
+                                    class="mx-1 my-1 px-2 lg:px-4 py-2 bg-white rounded-xl text-sm md:text-sm lg:text-md undefined">Material
+                                    UI</button>
+                                <button
+                                    class="mx-1 my-1 px-2 lg:px-4 py-2 bg-white rounded-xl text-sm md:text-sm lg:text-md undefined">Node
+                                    JS</button>
+                                <button
+                                    class="mx-1 my-1 px-2 lg:px-4 py-2 bg-white rounded-xl text-sm md:text-sm lg:text-md undefined">Express
+                                    JS</button>
+                                <button
+                                    class="mx-1 my-1 px-2 lg:px-4 py-2 bg-white rounded-xl text-sm md:text-sm lg:text-md undefined">MongoDB</button>
+                                <button
+                                    class="mx-1 my-1 px-2 lg:px-4 py-2 bg-white rounded-xl text-sm md:text-sm lg:text-md undefined">Axios</button>
+                                <button
+                                    class="mx-1 my-1 px-2 lg:px-4 py-2 bg-white rounded-xl text-sm md:text-sm lg:text-md undefined">JWT</button>
+                                <button
+                                    class="mx-1 my-1 px-2 lg:px-4 py-2 bg-white rounded-xl text-sm md:text-sm lg:text-md undefined">Mongoose</button>
+                                <button
+                                    class="mx-1 my-1 px-2 lg:px-4 py-2 bg-white rounded-xl text-sm md:text-sm lg:text-md undefined">React-Three-Fiber</button>
+                                <button
+                                    class="mx-1 my-1 px-2 lg:px-4 py-2 bg-white rounded-xl text-sm md:text-sm lg:text-md undefined">AOS</button>
+                            </div>
+                        </div>
+                        <div class="h-full flex justify-center items-center mt-6">
+                            <span class="flex items-center gap-2">
+                                <a href="https://tiempo.vip/" target="_blank"
+                                    class="text-lg font-semibold underline cursor-pointer ">View Website</a>
+                                <svg width="22" height="12" viewBox="0 0 22 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M21.5303 6.53033C21.8232 6.23744 21.8232 5.76256 21.5303 5.46967L16.7574 0.696699C16.4645 0.403806 15.9896 0.403806 15.6967 0.696699C15.4038 0.989592 15.4038 1.46447 15.6967 1.75736L19.9393 6L15.6967 10.2426C15.4038 10.5355 15.4038 11.0104 15.6967 11.3033C15.9896 11.5962 16.4645 11.5962 16.7574 11.3033L21.5303 6.53033ZM0 6.75L21 6.75V5.25L0 5.25L0 6.75Z"
+                                        fill="black"></path>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-screen flex items-center justify-center sticky top-0">
+                    <div class="relative flex flex-col h-[550px] md:h-[680px] lg:h-[550px] w-full lg:w-[1000px] rounded-2xl p-6 lg:p-12 origin-top border-2 border-white/50 shadow-lg shadow-white/50 "
+                        style="background-color: rgb(223, 223, 218); top: calc(50px - 5vh); transform: scale(0.88);">
+                        <h2 class="text-center text-2xl m-0">Maurice Andrews Solicitors</h2>
+                        <div class="grid lg:grid-cols-2  my-4">
+                            <p class="hidden lg:flex">
+                                Maurice Andrews Solicitors is a UK based solicitor's website.
+                                Its basically a portfolio website for the solicitors where people can find out more
+                                information about there offense and can contact with the solicitors team if needed.
+                            </p>
+                            <div class=" w-full p-2 flex items-center justify-center rounded-xl">
+                                <img src="maurice.png" alt="Maurice Andrews Solicitors"
+                                    class="w-full h-full object-fit rounded-t-xl">
+                            </div>
+                        </div>
+                        <div class="w-full ">
+                            <p class="font-semibold text-lg my-2">Technologies I Used: </p>
+                            <div class="flex flex-wrap max-w-full  items-center">
+                                <button
+                                    class="mx-1 my-1 px-2 lg:px-4 py-2 bg-white rounded-xl text-sm md:text-sm lg:text-md undefined">NextJS</button>
+                                <button
+                                    class="mx-1 my-1 px-2 lg:px-4 py-2 bg-white rounded-xl text-sm md:text-sm lg:text-md undefined">Tailwind
+                                    CSS</button>
+                                <button
+                                    class="mx-1 my-1 px-2 lg:px-4 py-2 bg-white rounded-xl text-sm md:text-sm lg:text-md undefined">Node
+                                    JS</button>
+                                <button
+                                    class="mx-1 my-1 px-2 lg:px-4 py-2 bg-white rounded-xl text-sm md:text-sm lg:text-md undefined">Express
+                                    JS</button>
+                                <button
+                                    class="mx-1 my-1 px-2 lg:px-4 py-2 bg-white rounded-xl text-sm md:text-sm lg:text-md undefined">MongoDB</button>
+                                <button
+                                    class="mx-1 my-1 px-2 lg:px-4 py-2 bg-white rounded-xl text-sm md:text-sm lg:text-md undefined">Mongoose</button>
+                                <button
+                                    class="mx-1 my-1 px-2 lg:px-4 py-2 bg-white rounded-xl text-sm md:text-sm lg:text-md undefined">Nodemailer</button>
+                            </div>
+                        </div>
+                        <div class="h-full flex justify-center items-center mt-6">
+                            <span class="flex items-center gap-2">
+                                <a href="https://www.mauriceandrewssolicitors.co.uk" target="_blank"
+                                    class="text-lg font-semibold underline cursor-pointer ">View Website</a>
+                                <svg width="22" height="12" viewBox="0 0 22 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M21.5303 6.53033C21.8232 6.23744 21.8232 5.76256 21.5303 5.46967L16.7574 0.696699C16.4645 0.403806 15.9896 0.403806 15.6967 0.696699C15.4038 0.989592 15.4038 1.46447 15.6967 1.75736L19.9393 6L15.6967 10.2426C15.4038 10.5355 15.4038 11.0104 15.6967 11.3033C15.9896 11.5962 16.4645 11.5962 16.7574 11.3033L21.5303 6.53033ZM0 6.75L21 6.75V5.25L0 5.25L0 6.75Z"
+                                        fill="black"></path>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-screen flex items-center justify-center sticky top-0">
+
+                </div>
+                <div class="h-screen flex items-center justify-center sticky top-0">
+                    <div class="relative flex flex-col h-[550px] md:h-[680px] lg:h-[550px] w-full lg:w-[1000px] rounded-2xl p-6 lg:p-12 origin-top border-2 border-white/50 shadow-lg shadow-white/50 "
+                        style="background-color: rgb(223, 223, 218); top: calc(100px - 5vh); transform: scale(0.96);">
+                        <h2 class="text-center text-2xl m-0">Royal Shuttle Belize</h2>
+                        <div class="grid lg:grid-cols-2  my-4">
+                            <p class="hidden lg:flex">
+                                Royal Shuttle Belize is a Belize based project for shuttle from airport to different
+                                destinations.
+                                It include the feature of booking a shuttle for whole day and contact based approach.
+                                The owner can see the query based on their email and the visitor can purchase any
+                                package with their Paypal account.
+                            </p>
+                            <div class=" w-full p-2 flex items-center justify-center rounded-xl">
+                                <img src="royal-belize.png" alt="Royal Shuttle Belize"
+                                    class="w-full h-full object-fit rounded-t-xl">
+                            </div>
+                        </div>
+                        <div class="w-full ">
+                            <p class="font-semibold text-lg my-2">Technologies I Used: </p>
+                            <div class="flex flex-wrap max-w-full  items-center">
+                                <button
+                                    class="mx-1 my-1 px-2 lg:px-4 py-2 bg-white rounded-xl text-sm md:text-sm lg:text-md undefined">NextJS</button>
+                                <button
+                                    class="mx-1 my-1 px-2 lg:px-4 py-2 bg-white rounded-xl text-sm md:text-sm lg:text-md undefined">Tailwind
+                                    CSS</button>
+                                <button
+                                    class="mx-1 my-1 px-2 lg:px-4 py-2 bg-white rounded-xl text-sm md:text-sm lg:text-md undefined">ShadCn</button>
+                                <button
+                                    class="mx-1 my-1 px-2 lg:px-4 py-2 bg-white rounded-xl text-sm md:text-sm lg:text-md undefined">Redux</button>
+                                <button
+                                    class="mx-1 my-1 px-2 lg:px-4 py-2 bg-white rounded-xl text-sm md:text-sm lg:text-md undefined">Typescript</button>
+                                <button
+                                    class="mx-1 my-1 px-2 lg:px-4 py-2 bg-white rounded-xl text-sm md:text-sm lg:text-md undefined">Node
+                                    JS</button>
+                                <button
+                                    class="mx-1 my-1 px-2 lg:px-4 py-2 bg-white rounded-xl text-sm md:text-sm lg:text-md undefined">Express
+                                    JS</button>
+                                <button
+                                    class="mx-1 my-1 px-2 lg:px-4 py-2 bg-white rounded-xl text-sm md:text-sm lg:text-md undefined">Mongoose</button>
+                                <button
+                                    class="mx-1 my-1 px-2 lg:px-4 py-2 bg-white rounded-xl text-sm md:text-sm lg:text-md undefined">Nodemailer</button>
+                                <button
+                                    class="mx-1 my-1 px-2 lg:px-4 py-2 bg-white rounded-xl text-sm md:text-sm lg:text-md undefined">Paypal</button>
+                                <button
+                                    class="mx-1 my-1 px-2 lg:px-4 py-2 bg-white rounded-xl text-sm md:text-sm lg:text-md undefined">Framer
+                                    Motion</button>
+                            </div>
+                        </div>
+                        <div class="h-full flex justify-center items-center mt-6">
+                            <span class="flex items-center gap-2">
+                                <a href="https://royalshuttlebelize.com" target="_blank"
+                                    class="text-lg font-semibold underline cursor-pointer ">View Website</a>
+                                <svg width="22" height="12" viewBox="0 0 22 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M21.5303 6.53033C21.8232 6.23744 21.8232 5.76256 21.5303 5.46967L16.7574 0.696699C16.4645 0.403806 15.9896 0.403806 15.6967 0.696699C15.4038 0.989592 15.4038 1.46447 15.6967 1.75736L19.9393 6L15.6967 10.2426C15.4038 10.5355 15.4038 11.0104 15.6967 11.3033C15.9896 11.5962 16.4645 11.5962 16.7574 11.3033L21.5303 6.53033ZM0 6.75L21 6.75V5.25L0 5.25L0 6.75Z"
+                                        fill="black"></path>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="px-4 lg:px-0 my-6 lg:my-4">
+            <h1
+                class="text-white text-2xl lg:text-7xl font-semibold uppercase flex-inline  justify-start border-b border-white">
+                Work Experience</h1>
+        </div>
+        <form id="experience" class="flex justify-center items-center "> -->
+        <!-- Experience Section -->
+        <!--
+            <section
+                class="relative flex flex-col h-[550px] md:h-[680px] lg:h-[550px] w-full lg:w-[1000px] rounded-2xl p-6 lg:p-12 origin-top border-2 border-white/50 shadow-lg shadow-white/50 "
+                style="background-color: rgb(223, 223, 218); top: calc(50px - 5vh); transform: scale(0.92273);">
+                <h2 class="text-3xl text-center font-bold mb-4">Experience</h2>
+                <p class="text-lg text-center leading-7">Describe your professional experiences here, highlighting key
+                    roles and achievements.</p>
+                <div class="h-screen flex justify-center items-center">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 px-8 py-16">
+                    -->
+        <!-- Card 1 -->
+        <!--
+                        <div class="bg-white shadow-lg p-6 rounded-lg hover:shadow-xl transition-shadow duration-300">
+                            <h3 class="font-semibold text-xl mb-2">Experience 1</h3>
+                            <p class="text-gray-700">Brief description of the project.</p>
+                            <a href="#" class="text-blue-500 hover:underline">View More</a>
+                        </div>
+                -->
+        <!-- Card 2 -->
+        <!--
+                        <div class="bg-white shadow-lg p-6 rounded-lg hover:shadow-xl transition-shadow duration-300">
+                            <h3 class="font-semibold text-xl mb-2">Experience 2</h3>
+                            <p class="text-gray-700">Details about another professional experience.</p>
+                            <a href="#" class="text-blue-500 hover:underline">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </form>
+-->
+
+
+        <div class="px-4 lg:px-0 my-6 lg:my-4">
+            <h1
+                class="text-cyan-500 text-2xl lg:text-7xl font-semibold uppercase flex-inline  justify-start border-b border-cyan-500">
+                Contact Me</h1>
+        </div>
+        <form id="contact" class="flex justify-center items-center ">
+            <!-- Contact Section -->
+            <div>
+                <section
+                    class="relative flex flex-col h-[570px] md:h-[600px] lg:h-[580px] lg:w-[900px] rounded-2xl p-6 lg:p-12 origin-top border-2 border-white/50 shadow-lg shadow-white/50 "
+                    style="background-color: rgb(223, 223, 218); top: calc(50px - 5vh); transform: scale(0.92273);">
+
+                    <div>
+                        <!--<h2 class="text-3xl text-center font-bold mb-4">Contact Me</h2>-->
+                        <p class="text-lg text-2xl font-bold text-start px-6 text-gray-700 mb-6">
+                            My Contact Details!
+                            <br>
+                        </p>
+                        <form action="#" method="post" class="bg-white shadow-lg p-6 rounded-lg w-full max-w-lg">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-8">
+                                <div class="mb-4">
+                                    <label for="email" class="block text-black font-semibold mb-2">Email</label>
+                                    <p>prionkar1998@gmail.com</p>
+                                    <br>
+                                    <label for="phone" class="block text-black font-semibold mb-2">Phone</label>
+                                    <p>(+880)1966106570</p>
+                                    <br>
+                                    <label for="address" class="block text-black font-semibold mb-2">Address</label>
+                                    <p>7, Nirapod Housing Society, Unus Lane, </br>DewanBazar, West Bakalia,
+                                        </br>Chattogram
+                                        4000, Bangladesh</p>
+                                </div>
+                                <div style="margin-left: 100px;">
+                                    <form action="#" method="post"
+                                        class="bg-white shadow-lg p-6 rounded-lg w-full max-w-lg">
+                                        <div class="mb-4">
+                                            <label for="name" class="block font-semibold mb-2">Your Name</label>
+                                            <input type="text" id="name" name="name"
+                                                class="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                                style="width: 400px">
+                                            <label for="email" class="block text-black font-semibold mb-2">Your
+                                                Email</label>
+                                            <input type="email" id="email" name="email"
+                                                class="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                                style="width: 400px">
+                                        </div>
+                                        <div class="mb-4">
+                                            <label for="message" class="block font-semibold mb-2">Message</label>
+                                            <textarea id="message" name="message" rows="5"
+                                                class="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                                style="width: 400px">
+                                                </textarea>
+                                            <button type="submit"
+                                                class="bg-gray-900 text-white py-2 px-4 rounded-lg hover:bg-gray-600 transition-colors duration-300">
+                                                Send
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div>
+                                <p>
+                                    <br>
+                                </p>
+                            </div>
+                            <div class="social-links flex justify-center items-center"
+                                style="background-color: rgb(223, 223, 218);">
+                                <a href="https://www.facebook.com/prionkar.barua.2024" target="_blank" class="hover:text-cyan-500">
+                                    <i class="fab fa-facebook fa-2x px-4"></i>
+                                </a>
+                                <a href="https://wa.me/+8801966106570" target="_blank" class="hover:text-green-400">
+                                    <i class="fab fa-whatsapp fa-2x px-4"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/prionkar-barua-766b05274/" target="_blank"
+                                    class="hover:text-blue-700">
+                                    <i class="fab fa-linkedin fa-2x px-4"></i>
+                                </a>
+                                <a href="https://github.com/prionMONKar" target="_blank" class="hover:text-cyan-800">
+                                    <i class="fab fa-github fa-2x px-4"></i>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+            </div>
+            </section>
+            </div>
+        </form>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-gray-200 py-4">
+        <div class="container mx-auto text-center text-gray-700">
+            &copy; 2024 Prionkar Barua. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const headings = document.querySelectorAll("h1"); // Select all h1 elements
+    
+            if (headings.length > 0) {
+                headings.forEach((heading) => {
+                    let hasAnimated = false; // Track animation state for each heading
+    
+                    const observer = new IntersectionObserver(
+                        (entries, observer) => {
+                            entries.forEach((entry) => {
+                                if (entry.isIntersecting) {
+                                    if (!hasAnimated) {
+                                        // First time in view: Slide from left
+                                        entry.target.classList.add("slide-from-left");
+                                        hasAnimated = true; // Mark as animated for this heading
+                                    } else {
+                                        // Subsequent views: Slide from right
+                                        entry.target.classList.remove("slide-from-left");
+                                        entry.target.classList.add("slide-from-right");
+                                    }
+                                    observer.unobserve(entry.target); // Stop observing this heading
+                                }
+                            });
+                        },
+                        { threshold: 0.5 } // Trigger when 50% of the heading is visible
+                    );
+    
+                    // Start observing this heading
+                    observer.observe(heading);
+                });
+            }
+        });
+    </script>
+    
+    
+
+</body>
+
+</html>
